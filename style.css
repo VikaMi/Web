@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
 
-.body{
+body{
 	background-color: #f2f2f2;
 	font-family: "Lato";
 	font-weight: 300;
@@ -10,10 +10,7 @@
 	-webkit-font-smoothing: antialiased;
 	-webkit-overflow-scrolling: touch;
 
-}
-
-.headerwrap{
-	margin-top: 75px;
+	margin-top: 70px;
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -62,12 +59,3 @@ hr{
 	border-color: #2d2d2d;
 }
 
-.main-content{
-	margin: 0 auto;
-	width: auto;
-}
-
-.mg-auto{
-	margin: auto;
-	float: none;
-}
