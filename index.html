@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html>
+
+<html manifest="manifest.cache">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мій сайт</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="fonts/font-awesome.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css\bootstrap.css">
+  <link rel="stylesheet" href="js\jquery.min.js">
+  <link rel="stylesheet" href="js\bootstrap.min.js">
+ 
+  
+
+  
+  <link rel="stylesheet" href="css\style.css">
 </head>
 <body>
   <div class="navbar navbar-inverse navbar-fixed-top">
@@ -22,21 +28,21 @@
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li class="active"><a href="#">Головна</a></li>
-          <li><a href="#">Новини</a></li>
+          <li class="active"><a href="index.html">Головна</a></li>
+          <li><a href="#news">Новини</a></li>
           <li><a href="admin.html">Адмін</a></li>
-          <li><a href="#">Контакти</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
           <li class="dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Студентам<span class="caret"></span></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Програма</a></li>
+              <li><a href="curiculum.html">Програма</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="#">Лабораторні</a></li>
               <li role="separator" class="divider"></li>
               <li><a href="#">Література</a></li>
             </ul>
           </li>
-          <li><a href="#"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+          <li><a href="rewievs.html"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
@@ -69,18 +75,18 @@
         <i class="fa fa-list-alt"></i>
         <h4>Зміст</h4>
         <p>Загальна характеристика діяльності з надання фінансових послуг фізичним особам. Споживче кредитування. Залучення коштів фізичних осіб на вклади. Забезпечення платіжного обігу за участі фізичних осіб. Управління фінансовими активами фізичних осіб. Особисте страхування.</p>
-      </div>
+      </div><a name = "news"></a>
     </div>
     <br><br>
   </div>
   <div id="dg">
     <div class="container">
       <div class="row centered">
-        <h4>Новини</h4>
+        <h4>Новини</a></h4>
         <br>
         <div class="col-lg-4">
           <div class="tilt">
-            <a href="#"><img src="img/p1.png" alt=""></a>
+            <a href="#"><img src="img/p1.png" alt="">
           </div>
         </div>
         <div class="col-lg-4">
@@ -118,20 +124,16 @@
         <i class="fa fa-file-o"></i>
         <h4>Вміти:</h4>
         <p><li>тлумачити відповідні цивільно-правові норми;</li>
-<li>аналізувати існуючі доктринальні позиції щодо вирішення
-проблемних питань правового регулювання надання фінансових послуг і
+<li>аналізувати існуючі доктринальні позиції щодо вирішення проблемних питань правового регулювання надання фінансових послуг і
 формулювати власну позицію</li>
-<li>застосовувати цивільно-правові норми для вирішення конкретних
-практичних ситуацій, узагальнювати матеріали судової практики,
-виявляти прогалини правового регулювання відносин щодо надання
-фінансових послуг, неоднакове застосування судами норм матеріального права;</li>
+<li>застосовувати цивільно-правові норми для вирішення конкретних практичних ситуацій, узагальнювати матеріали судової практики, виявляти прогалини правового регулювання відносин щодо надання фінансових послуг, неоднакове застосування судами норм матеріального права;</li>
 <li>складати проекти договорів та інших документів.Цивільне, банківське законодавство, яке регулює відносини щодо надання фінансових послуг фізичним особам.</li></p></div>
 </p>
         <p><br><br></p>
       </div>
       <div class="col-lg-2"></div>
       <div class="col-lg-10 col-lg-offset-1">
-        <img src="img/munter.png" alt="" class="img-responsive">
+        <img src="img/p1.png" alt="" class="img-responsive">
       </div>
     </div>
   </div>
@@ -154,8 +156,7 @@
       </div>
     </div>
   </div>
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+   <script src="js/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
