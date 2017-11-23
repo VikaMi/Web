@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Мій сайт</title>
   <link rel="stylesheet" href="css/bootstrap.css">
-  <link rel="stylesheet" href="fonts/font-awesome.min.css">
+  <link rel="stylesheet" href="fonts/font-awesome.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -36,19 +36,41 @@
               <li><a href="#">Література</a></li>
             </ul>
           </li>
-          <li><a href="rewievs.html"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+          <li><a href="feedback.html"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
   </div>
-<form>
-   <input type="file" name="photo" multiple accept="image/*,image/jpeg"/>
-   <input name="emailaddress" placeholder="Введіть заголовок" class="textbox" type="email" required />
-   <textarea rows="4" cols="50" name="subject" placeholder="Введіть коментар" class="message" required></textarea>
-   <input name="submit" class="button" type="submit" value="Відправити новину" />
-   
-</form>
+<div class="container">
+  <div class="main-text">
+    <h2>Додати новину</h2>
+    <br>
 
+    <div class="col-md-6">
+        <form id="news-img-form">
+          <label>Виберіть зображення</label>
+          <input id="news-img" type="file" class="form-control-file" accept="image/*">
+        </form>
+      <br>
+      <img id="target" src="images/picture-icon.png" width="100%" class="card" style="max-height: 350px; max-width: 350px; padding: 10px"/>
+    </div>
+
+
+    <div class="col-md-6">
+      <form id="news-form">
+        <input id="news-name" type="text" class="form-control" placeholder="Заголовок">
+        <br>
+        <textarea id="news-text" class="form-control" rows="15" placeholder="Новина"></textarea>
+        <br>
+        <input type="button" value="Надіслати" class="btn btn-primary" onclick="addNews()">
+      </form>
+    </div>
+
+  </div>
+</div>
+
+
+</body>
  <div id="f">
     <div class="container">
       <div class="row centered">
@@ -58,8 +80,7 @@
       </div>
     </div>
   </div>
-
+  <script src="js/admin.js"></script>
  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
-</body>
 </html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Мій сайт</title>
+  <link rel="stylesheet" href="css/bootstrap.css">
+  <link rel="stylesheet" href="fonts/font-awesome.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+            <a class="navbar-logo" href=""><img src="https://upload.wikimedia.org/wikipedia/commons/6/6f/Eo-scale2.png" weight = "50" height="60" w></a>
+            <i class="fa fa-briefcase" weight = "50" height="60" color: white></i>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="index.html">Головна</a></li>
+          <li><a href="index.html#news">Новини</a></li>
+          <li><a href="admin.html">Адмін</a></li>
+          <li><a href="contacts.html">Контакти</a></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Студентам<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="active"><a href="curiculum.html">Програма</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Лабораторні</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Література</a></li>
+            </ul>
+          </li>
+          <li><a href="feedback.html"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>    <div class="container">
+        <h1 class="title">Відгуки</h1>
+        <div id="feedbacksWrap">
+        <div class="feedback">
+            <h2>Вася Пупкін</h2>
+            <span>11.12.12</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum earum, repudiandae quo animi optio molestiae quibusdam minus ullam, unde praesentium deleniti? Non repudiandae magnam omnis accusamus aut sit tempora expedita.</p>
+        </div>
+        <div class="feedback">
+            <h2>Вася Пупкін</h2>
+            <span>11.12.12</span>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum earum, repudiandae quo animi optio molestiae quibusdam minus ullam, unde praesentium deleniti? Non repudiandae magnam omnis accusamus aut sit tempora expedita.</p>
+        </div>
+      </div>
+        <textarea label="feedback" id="feedback" rows="10" placeholder="Новий відгук"></textarea>
+        <div class="btn btn-light">
+            <button for="feedback" id="feedbackButton" type="submit">Відправити</button>
+        </div>
+    </div>
+    <div id="f">
+    <div class="container">
+      <div class="row centered">
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-vk"></i></a>
+      </div>
+    </div>
+  </div>
+    <script src="js/feedback.js"></script>
+</body>
+
+</html>
