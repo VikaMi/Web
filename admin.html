@@ -43,33 +43,27 @@
   </div>
 <div class="container">
   <div class="main-text">
-    <h2>Додати новину</h2>
-    <br>
-
-    <div class="col-md-6">
+     <div class="container">
+      <br><br><br><br>
+    <h1>Додати новину</h1>
+       <div class="col-lg-6">
         <form id="news-img-form">
-          <label>Виберіть зображення</label>
-          <input id="news-img" type="file" class="form-control-file" accept="image/*">
+                  <label>Виберіть зображення</label>
+                  <input id="news-img" type="file" class="form-control-file" accept="image/*">
+            </div>
+            <div class="col-lg-6">
+              <div class="form-group">
+                <textarea class="form-control" id="newsHeader" rows="1" placeholder="Заголовок..."></textarea>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="newsText"rows="10" placeholder="Новина..."></textarea>
+                <button  class="admin_button btn btn-primary btn-lg" onClick = "addNews()" type="button">Haдіслати</button>
+              </div>
+           </div>
         </form>
-      <br>
-      <img id="target" src="images/picture-icon.png" width="100%" class="card" style="max-height: 350px; max-width: 350px; padding: 10px"/>
-    </div>
-
-
-    <div class="col-md-6">
-      <form id="news-form">
-        <input id="news-name" type="text" class="form-control" placeholder="Заголовок">
-        <br>
-        <textarea id="news-text" class="form-control" rows="15" placeholder="Новина"></textarea>
-        <br>
-        <input type="button" value="Надіслати" class="btn btn-primary" onclick="addNews()">
-      </form>
-    </div>
-
+      </div>
   </div>
 </div>
-
-
 </body>
  <div id="f">
     <div class="container">
@@ -81,6 +75,6 @@
     </div>
   </div>
   <script src="js/admin.js"></script>
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
 </html>
