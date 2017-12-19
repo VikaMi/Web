@@ -42,24 +42,23 @@
         </ul>
       </div>
     </div>
-  </div>    <div class="container">
-        <h1 class="title">Відгуки</h1>
-        <div id="feedbacksWrap">
-        <div class="feedback">
-            <h2>Вася Пупкін</h2>
-            <span>11.12.12</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum earum, repudiandae quo animi optio molestiae quibusdam minus ullam, unde praesentium deleniti? Non repudiandae magnam omnis accusamus aut sit tempora expedita.</p>
-        </div>
-        <div class="feedback">
-            <h2>Вася Пупкін</h2>
-            <span>11.12.12</span>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum earum, repudiandae quo animi optio molestiae quibusdam minus ullam, unde praesentium deleniti? Non repudiandae magnam omnis accusamus aut sit tempora expedita.</p>
-        </div>
+  </div>    
+   <div class="container">
+      <div class="row">
+        <form>
+          <div class="form-group">
+            <textarea class="form-control" id="name" placeholder="Введіть ім'я та прізвище..." rows="1"></textarea>
+          </div>
+          <div class="form-group">
+            <textarea class="form-control" id="text" placeholder="Новий відгук..." rows="5"></textarea>
+          </div><button class="btn btn-primary btn-md" id="sendbtn" onclick="addFeedback()" type="button">Відправити</button>
+        </form>
       </div>
-        <textarea label="feedback" id="feedback" rows="10" placeholder="Новий відгук"></textarea>
-        <div class="btn btn-light">
-            <button for="feedback" id="feedbackButton" type="submit">Відправити</button>
-        </div>
+    </div>
+  <div class="container" id="responses">
+        <div class="feedback">
+      <h2 class="Feedback_heading">Вася Пупкін</span> <small>21.10.2017</small></h2>
+      <p>Why end might ask civil again spoil. She dinner she our horses depend. Remember at children by reserved to vicinity. In affronting unreserved delightful simplicity ye. Law own advantage furniture continual sweetness bed agreeable perpetual. Oh song well four only head busy it. Afford son she had lively living. Tastes lovers myself too formal season our valley boy. Lived it their their walls might to by young. Delightful unreserved impossible few estimating men favourable see entreaties. She propriety immediate was improving. He or entrance humoured likewise moderate. Much nor game son say feel. Fat make met can must form into gate. Me we offending prevailed discovery.</p>
     </div>
     <div id="f">
     <div class="container">
@@ -71,6 +70,6 @@
     </div>
   </div>
     <script src="js/feedback.js"></script>
+    <script src="js/db.js"></script>
 </body>
-
 </html>
